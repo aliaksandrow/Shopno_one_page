@@ -1,0 +1,208 @@
+@media only screen and (max-width:600px){
+    p {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:400px){
+    p {
+        font-size: 14px;
+    }
+}
+/*
+* header
+*/
+
+@media only screen and (max-width:768px) {
+    header .row{
+        height: 60px;
+    }
+
+    header .logo {
+        top: 6%;
+    }
+    .menu {
+        top: 15%;
+    }
+}
+/*
+* intro
+*/
+@media only screen and (max-width: 600px) {
+    #intro {
+        min-height: 700px;
+    }
+}
+/*
+* about-us
+*/
+@media only screen and (max-width:600px) {
+    .presentation>div {
+        min-width: 100%;
+    }
+    .col-right {
+        margin: 0 auto;
+        position: relative;
+    }
+    .col-left {
+        display: block;
+        margin: 0 auto;
+    }
+}
+/*
+* works
+*/
+@media only screen and (max-width:1220px) {
+    .featuring {
+        text-align: center;
+    }
+    .featuring li {
+        margin: 0 1% 1% 0;
+    }
+    .featuring li:nth-child(3n+3) {
+        margin-right: 1%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .featuring {
+        margin-top: 90px;
+        text-align: center;
+    }
+    .featuring li {
+        width: 90%;
+    }
+}
+@media screen and (max-width:400px) {
+        .featuring li {
+        margin-left: 5%;
+            width: 90%;
+    }
+}
+/*
+* servises 
+*/
+@media only screen and (max-width:768px) {
+    .block-a, .block-b {
+        width: 100%;
+        display: block;
+    }
+}
+@media only screen and (max-width:600px) {
+     .block-a, .block-b {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+/*
+* team
+*/
+@media only screen and (max-width:1220px) {
+    .photo-wall {
+        top: 100px;
+        text-align: center;
+    }
+    .person:nth-child(3n+3) {
+    margin-right: 1.31578947368421%;
+}
+@media only screen and (max-width:600px) {
+}
+    @media only screen and (max-width:400px) {
+        .photo-wall {
+            left: 2%;
+            display: block;
+        }
+        .person {
+            width: 90%;
+        }
+    }
+/*
+* reviews
+*/
+@media only screen and (max-width:1024px) {
+    #reviews {
+        min-height: 723px;
+    }
+    #words .col-right {
+        
+    }
+    #reviews .col-right .wrap {
+        padding: 15% 9% 0 8.2%;
+    }
+}
+@media only screen and (max-width:600px) {
+   #reviews .presentation .col-left {
+    min-width: 80%;
+}
+        #words .col-right {
+        width: 500px;
+    }
+    #reviews .col-right .wrap {
+        padding: 60px 9% 0 8.2%;
+    }
+}
+@media only screen and (max-width:400px) {
+    #words .col-right {
+        width: 300px;
+    }
+    #words .col-right .wrap {
+    padding: 101px 0 0 3.91291291291291%;
+    }
+}
+/*
+*partners
+*/
+
+@media only screen and (max-width:1220px){
+    #partners .featuring {
+        text-align: center;
+    }
+    #partners .featuring li {
+        margin-right: 2.26315789473684%;
+    }
+    #partners .featuring li:first-child {
+        margin-left: 25.82456140350877%;
+    }
+    #partners .featuring li:nth-child(3) {
+        margin-right: 20.82456140350877%;
+    }
+    @media only screen and (max-width:768px) {
+        #partners .featuring {
+            position: relative;
+            left: 3%;
+        }
+        #partners .featuring li {
+            margin-bottom: 2%;
+        }
+        #partners .featuring li:first-child {
+            margin-left: auto;
+        }
+        #partners .featuring li:nth-child(3) {
+            margin-right: 0;
+        }
+        #partners .featuring li:last-child {
+            margin: 0 auto;
+        }
+    }
+}
+@media only screen and (max-width:600px) {
+            #partners .featuring li:nth-child(odd) {
+            margin-left: auto;
+        }
+}
+/*
+* feedback
+*/
+    @media only screen and (max-width:768px) {
+        #feedback .col-left input[type=button] {
+            height: 53px;
+            font-size: 14px;
+        }
+}
+@media only screen and (max-width:600px) {
+    #feedback .col-left, .col-right {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+    #feedback .col-right {
+        width: 100%;
+    }
+}
