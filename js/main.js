@@ -27,10 +27,10 @@ function(){
 $('.hover',this).hide();
 });
 }) 
-/*
-$(document).ready(function() {
-	$('.design div').hover(
-		function(){$('.hover',this).fadeIn('fast');},
-		function(){$('.hover',this).fadeOut('fast');
-     });
-});*/
+$(document).ready(function(){
+ 
+    $(".active .close").click(function(){
+        $(this).parents(".active").hide(this);
+    });
+ 
+});
