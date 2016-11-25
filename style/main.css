@@ -330,6 +330,7 @@ header .logo a {
     width: 17px;
     height: 17px;
     display: inline-block;
+    cursor: pointer;
 }
 /*
 .hover .wrap {
