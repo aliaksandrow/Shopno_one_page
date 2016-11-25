@@ -324,11 +324,12 @@ header .logo a {
 .active p {
     padding: 38px 0 0 0;
 }
-.active a {
+.go {
     padding-top: 75px;
     background: url(../images/cross.png)center no-repeat;
     width: 17px;
     height: 17px;
+    display: inline-block;
 }
 /*
 .hover .wrap {
