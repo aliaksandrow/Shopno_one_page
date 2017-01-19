@@ -650,6 +650,15 @@ header .logo a {
     text-transform: uppercase;
     color: #214744;
 }
+@media only screen and (max-width:600px) {
+    #feedback .col-left, .col-right {
+        min-width: 100%;
+        margin-bottom: 1%;
+    }
+    #feedback .col-right {
+        min-width: 100%;
+    }
+}
 /* footer start =======================================   
 */
 footer {
