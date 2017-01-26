@@ -47,10 +47,10 @@ $(document).ready(function(){
       /* section-servises hover */  
 $(document).ready(function(){
     $('.design div').hover(function(){
-$('.hover',this).hide();
+$('.hover',this).show();
 },
 function(){
-$('.hover',this).show();
+$('.hover',this).hide();
 });
 })
       /* section-team hover */
