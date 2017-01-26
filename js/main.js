@@ -1,3 +1,38 @@
+/*main-nav*/
+$(document).ready(function(){
+	var sections = $("section"),
+	navigation_links = $("#main-nav-wrap li a")	
+	sections.waypoint( {
+       handler: function(direction) {
+		   var active_section;
+			active_section = $('section#' + this.element.id);
+			if (direction === "up") active_section = active_section.prev();
+     var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+ navigation_links.parent().removeClass("current");
+	active_link.parent().addClass("current");
+		}, 
+		offset: '20%'
+	});
+    /*mobile*/
+     var toggleButton = $('.menu-toggle'),
+       nav = $('.main-navigation');
+   toggleButton.on('click', function(event){
+		event.preventDefault();
+		toggleButton.toggleClass('is-clicked');
+		nav.slideToggle();
+	});
+  	if (toggleButton.is(':visible')) nav.addClass('mobile');
+  	$(window).resize(function() {
+   	if (toggleButton.is(':visible')) nav.addClass('mobile');
+    	else nav.removeClass('mobile');
+  	});
+  	$('#main-nav-wrap li a').on("click", function() {   
+   	if (nav.hasClass('mobile')) {   		
+   		toggleButton.toggleClass('is-clicked'); 
+   		nav.fadeOut();   		
+   	}     
+  	});
+    });
 /* sticky */
    $(window).on('scroll', function() {
 		var y = $(window).scrollTop(),
@@ -12,10 +47,10 @@
       /* section-servises hover */  
 $(document).ready(function(){
     $('.design div').hover(function(){
-$('.hover',this).show();
+$('.hover',this).hide();
 },
 function(){
-$('.hover',this).hide();
+$('.hover',this).show();
 });
 })
       /* section-team hover */
