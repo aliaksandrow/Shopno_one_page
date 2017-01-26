@@ -4,12 +4,12 @@ $(document).ready(function(){
 	navigation_links = $("#main-nav-wrap li a")	
 	sections.waypoint( {
        handler: function(direction) {
-		   var active_section;
-			active_section = $('section#' + this.element.id);
-			if (direction === "up") active_section = active_section.prev();
+    var active_section;
+     active_section = $('section#' + this.element.id);
+     if (direction === "up") active_section = active_section.prev();
      var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
- navigation_links.parent().removeClass("current");
-	active_link.parent().addClass("current");
+     navigation_links.parent().removeClass("current");
+     active_link.parent().addClass("current");
 		}, 
 		offset: '20%'
 	});
