@@ -76,11 +76,12 @@ input[type=button] {
 header {
     width: 100%;
     background-color: rgba(239, 240, 242, 0.99);
-    position: relative;
+    position: absolute;
     z-index: 2;
+    top: 50px;
 }
 header .row {
-    height: 110px;
+    height: 60px;
     position: relative;
 }
 header .logo {
@@ -92,13 +93,70 @@ header .logo a {
     width: 113px;
     height: 46px;
 }
-.menu {
-    background: url(../images/menu.png)center no-repeat;
-    width: 33px;
-    height: 23px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
+a.menu-toggle {
+    display: none;
+}
+#main-nav-wrap {
+    font-family: "montserrat", sans-serif;
+	font-size: 11.5px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+.main-navigation {
+    min-height: 60px;
+	display: inline-block;
+	width: auto;
+	text-align: left;
+}
+.main-navigation li {
+    position: relative;
+	display: inline-block;
+	height: 60px;
+}
+.main-navigation li.current a {
+	color: #05bca9;
+}
+.main-navigation li.current a::after {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 80%;
+	height: 3px;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-color: #05bca9;
+	content: '\0020';
+	display: block;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.main-navigation li a {
+	display: block;
+	padding: 18px 7px 15px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: left;
+	color: #5e5f5f;
+	position: relative;
+	-moz-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	-webkit-transition: color 0.3s ease-in-out;
+	-ms-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+.main-navigation li {
+	color: #eff0f2;
+}
+.main-navigation li {
+	position: relative;
+	padding-left: 22px;
 }
 /* sticky */
 .sticky { 
@@ -120,11 +178,19 @@ header .logo a {
     top: 15%;
 }
 /* sticky */
+@media only screen and (min-width:769px) {
+	#main-nav-wrap ul.main-navigation {
+		display: block !important;
+	}
+}
 /*section===================================*/
 #intro {
-    min-height: 806px;
+    min-height: 856px;
     background-color: rgba(239, 240, 242, 0.99);
     position: relative;
+}
+#intro .row {
+    top: 50px;
 }
 .intro-content {
     text-align: center;
@@ -577,6 +643,27 @@ header .logo a {
 .i-swanser {
     background: url(../images/swanser.png);
 }
+/* responsive
+*
+*/
+    @media only screen and (max-width:768px) {
+        #partners .featuring {
+            position: relative;
+            left: 3%;
+        }
+        #partners .featuring li {
+            margin-bottom: 2%;
+        }
+        #partners .featuring li:first-child {
+            margin-left: auto;
+        }
+        #partners .featuring li:nth-child(3) {
+            margin-right: 0;
+        }
+        #partners .featuring li:last-child {
+            margin: 0 auto;
+        }
+    }
 /* feedback ============================================*/
 #feedback {
     min-height: 705px;
