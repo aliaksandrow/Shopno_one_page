@@ -10,16 +10,28 @@
     <!-- script -->
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.waypoints.js"></script>
  </head>
  <body>
 <!--header =================================================-->
      <header>
-         <div class="row">
+        <div class="row">
              <div class="logo">
     <a href="#"></a>         
              </div>
-             <div class="menu"></div>
+             <nav id="main-nav-wrap">
+                 <ul class="main-navigation">
+                 <li class="current"><a class="smoothscroll" href="#intro" title="">home</a>
+                 <li><a href="#about-us" title="">about us</a>
+                 <li><a href="#works" title="">works</a>
+                 <li><a href="#servises" title="">servises</a>
+                 <li><a href="#team" title="">our team</a>
+                 <li><a href="#reviews" title="">reviews</a>
+                 <li><a href="#feedback" title="">contacts</a>
+                 </ul>
+                 </nav>
          </div>
+<a class="menu-toggle" href="#"><span>Menu</span></a>
      </header>
 <!-- ==================================header end ==============================================--> 
 <!-- intro ======================================================================================-->
